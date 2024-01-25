@@ -51,14 +51,30 @@
   float: left;
   display: inline-block;
   width: 120px;
-  padding: 20px;
+  padding: 14px;
   height: 70px;
 }
 .add-to-cart img{
-  width: 120px;
+  width: 80px;
   position: absolute;
   right: 1%;
   top:1%
+}
+.cart-count{
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  z-index: 1;
+  background-color: red;
+  padding: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+}
+ button.remove-cart-btn{
+  background-color: rebeccapurple;
+  margin-top: 8px;
 }
 /*  */
 

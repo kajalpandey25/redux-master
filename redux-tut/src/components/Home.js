@@ -5,10 +5,6 @@ function Home(props)
     console.warn("home", props.data);
     return(
         <div>
-            <div className='add-to-cart'>
-                <img src="https://cdn.pixabay.com/photo/2018/03/21/21/14/cart-3248232_640.jpg" alt="" />
-
-            </div>
             <h1>Home Component</h1>
             <div className='cart-wrapper'>
                 <div className='img-wrapper item'>
@@ -27,6 +23,11 @@ function Home(props)
                     onClick={()=>
                      props.addToCartHandler({price:1000,name:'I Phone 11'})
                     }>Add To Card</button>
+                     <button 
+                     className='remove-cart-btn'
+                    onClick={()=>
+                     props.removeToCartHandler()
+                    }>Remove To Card</button>
                 </div>
             </div>
         </div>
